@@ -39,6 +39,7 @@ function deepestChild() {
   var deepestNodeList = startNode.children;
   var deepestElement = startNode;
   var depthCount = 0;
+  var currentNode = document.querySelector('#grand-node');
   
   function findDeepest(deepestNodeList) {
       
