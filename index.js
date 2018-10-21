@@ -42,9 +42,28 @@ function deepestChild() {
   
   return function findDeepest() {
       
-   
+    //...see if the actual node has children
+    if (currentNode.childElementCount > 0) {
+      
+      //...if so, look into the first child node
+      currentNode = currentNode.children[0];
+      depthCount += 1;
+      console.log(`Tiefe: ${depthCount}`);
+      console.log(`If... currentNode:`);
+      console.log(currentNode);
+      findDeepest();
+      
+    } 
+    
+    //if not, look into the next child node
+    else   {
+     
+      console.log('Else - deepestElement. ' + currentNode);
+      console.log(currentNode);
       return currentNode;
-  
+      
+    }
+    
   }
   
 }
