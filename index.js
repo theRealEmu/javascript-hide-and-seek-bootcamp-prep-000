@@ -36,19 +36,21 @@ function increaseRankBy(n) {
 function deepestChild() {
   
   var startNode = document.querySelector('#grand-node');
+  var deepestNodeList = startNode.children;
   var deepestElement = startNode;
   var depthCount = 0;
   
-  function findDeepest(deepestElement) {
+  function findDeepest(deepestNodeList) {
     
-    for( let i = 0; i < deepestElement.length; i += 1) {
+    for( let i = 0; i < deepestNodeList.length; i += 1) {
       
-      if (deepestElement[i].childElementCount > 0) {
+      if (deepestNodeList[i].childElementCount > 0) {
         
         depthCount += 1;
         console.log('Tiefe: ' + depthCount);
-        deepestElement = deepestElement[i].children;
-        findDeepest(deepestElement);
+        deepestElement = deepestNodeList[i];
+        deepestNodeList = deepestNodeList[i].children;
+        findDeepest(deepestNodeList);
         
       } else {
         
