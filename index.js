@@ -22,9 +22,10 @@ function increaseRankBy(n) {
   let nodes = document.querySelectorAll('.ranked-list li')
   
   for ( let i = 0; i < nodes.length; i += 1) {
-    console.log(nodes);
+    //console.log(nodes);
     let num = parseInt(nodes[i].innerHTML);
-	  console.log(num);
-    nodes[i].innerHTML = (num + n);
+	  //console.log(num);
+    nodes[i].innerHTML = (num + n);  //Bad: innerText instead of innerHTML causes the test to fail
   }
+  
 }
