@@ -44,10 +44,16 @@ function deepestChild() {
     for( let i = 0; i < deepestElement.length; i += 1) {
       
       if (deepestElement[i].childElementCount > 0) {
+        
+        depthCount += 1;
+        console.log('Tiefe: ' + depthCount);
         deepestElement = deepestElement[i].children;
         findDeepest(deepestElement);
+        
       } else {
+        
         return deepestElement;
+        
       }
       
     }
