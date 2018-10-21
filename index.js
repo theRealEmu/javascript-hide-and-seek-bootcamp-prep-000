@@ -39,6 +39,7 @@ function deepestChild() {
   var depthCount = 0;
   var currentNode = startNode;
   
+  
   function findDeepest(currentNode) {
       
     //...see if the actual node has children
@@ -61,6 +62,7 @@ function deepestChild() {
     }
     
   }
+  
   
   findDeepest(currentNode);
   
