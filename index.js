@@ -40,7 +40,7 @@ function deepestChild() {
   var currentNode = startNode;
   
   
-  function findDeepest(currentNode) {
+  function findDeepest() {
       
     //...see if the actual node has children
     if (currentNode.childElementCount > 0) {
