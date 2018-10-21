@@ -44,6 +44,8 @@ function deepestChild() {
     for( let i = 0; i < deepestElement.length; i += 1) {
       
       if (deepestElement[i].childElementCount > 0) {
+        deepestElement = deepestElement[i].children;
+      } else {
         
       }
       
