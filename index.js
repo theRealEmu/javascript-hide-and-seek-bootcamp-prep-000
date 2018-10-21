@@ -56,7 +56,10 @@ function deepestChild() {
         deepestNodeList = deepestNodeList[i].children;
         findDeepest(deepestNodeList);
         
-      } 
+      } else {
+        
+        return deepestElement;
+      }
       
     }
         
