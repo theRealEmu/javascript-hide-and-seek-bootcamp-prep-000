@@ -12,4 +12,4 @@ function getFirstSelector(selector) {
 function nestedTarget(nested, target) {
   return document.querySelector(nested target);
 }
-console.log(nestedTarget('nested','.target'));
+//console.log(nestedTarget('nested','.target'));
