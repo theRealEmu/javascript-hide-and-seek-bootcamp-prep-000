@@ -57,8 +57,8 @@ function deepestChild() {
         
       } else {
         
-        console.log(deepestElement);
-        //return deepestElement;
+        //console.log(deepestElement);
+        return deepestElement;
         
       }
       
