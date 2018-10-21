@@ -60,6 +60,7 @@ function deepestChild() {
       
       deepestElement = currentNode;
       console.log('Else - deepestElement. ' + deepestElement);
+      console.log(deepestElement);
       return deepestElement;
     }
     
