@@ -48,7 +48,7 @@ function deepestChild() {
       //...see if the actual node has children
       if (deepestNodeList[i].childElementCount > 0) {
         
-        //...if so, increase the depth, make the deepestElement the first child
+        //...if so, increase the depth, make the deepestElement the first child and set the deepesNodeList to all of the actual nodes children
         depthCount += 1;
         console.log('Tiefe: ' + depthCount);
         deepestElement = deepestNodeList[i].children[0];
