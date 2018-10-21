@@ -45,8 +45,9 @@ function deepestChild() {
       
       if (deepestElement[i].childElementCount > 0) {
         deepestElement = deepestElement[i].children;
+        findDeepest(deepestElement);
       } else {
-        
+        return deepestElement;
       }
       
     }
