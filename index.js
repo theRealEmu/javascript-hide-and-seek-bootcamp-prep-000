@@ -39,33 +39,31 @@ function deepestChild() {
   var deepestNodeList = startNode.children;
   var deepestElement = startNode;
   var depthCount = 0;
-  var currentNode = document.querySelector('#grand-node');
+  var currentNode = startNode;
   
   function findDeepest(deepestNodeList) {
       
       //...see if the actual node has children
-      if (deepestNodeList[0].childElementCount > 0) {
+      if (currentNode.childElementCount > 0) {
         
         //...if so, look into the first child node
-        
-       
+        currentNode = currentNode.children[0];
+        depthCount += 1;
         console.log('Tiefe: ' + depthCount);
-        deepestElement = deepestNodeList[0].children[0];
-        deepestNodeList = deepestNodeList[0].children;
-        
-        findDeepest(deepestNodeList);
+       
+        findDeepest(currentNode);
         
       } 
       
       //if not, look into the next child node
       else   {
-        depthCount += 1;
         
-        //return deepestElement;
+        deepestElement = currentNode;
+        return deepestElement;
       }
   
   
-  findDeepest(deepestNodeList);
+  findDeepest(currentNode);
   
 }
 
