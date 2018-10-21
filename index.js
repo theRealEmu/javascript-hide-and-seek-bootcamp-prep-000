@@ -51,10 +51,11 @@ function deepestChild() {
         console.log('Tiefe: ' + depthCount);
         deepestElement = deepestNodeList[0].children[0];
         deepestNodeList = deepestNodeList[0].children;
-        depthCount += 1;
+        
         findDeepest(deepestNodeList);
         
       } else {
+        depthCount += 1;
         
         return deepestElement;
       }
