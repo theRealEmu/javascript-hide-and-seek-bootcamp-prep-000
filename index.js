@@ -24,7 +24,7 @@ function increaseRankBy(n) {
   for ( let i = 0; i < nodes.length; i += 1) {
     console.log(nodes);
     let num = parseInt(nodes[i].innerText);
-	console.log(num);
+	  console.log(num);
     nodes[i].innerText = (num + n);
   }
 }
