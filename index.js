@@ -63,7 +63,7 @@ function deepestChild() {
     
   }
   
-  findDeepest();
+  findDeepest(deepestNodeList);
   
 }
 
