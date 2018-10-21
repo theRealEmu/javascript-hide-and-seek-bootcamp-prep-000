@@ -41,32 +41,24 @@ function deepestChild() {
   var depthCount = 0;
   
   function findDeepest(deepestNodeList) {
-    
-    //Go through the currently deepestNodeList and...
-    for( let i = 0; i < deepestNodeList.length; i += 1) {
       
       //...see if the actual node has children
-      if (deepestNodeList[i].childElementCount > 0) {
+      if (deepestNodeList[0].childElementCount > 0) {
         
-        //...if so, increase the depth, make the deepestElement the first child and set the deepesNodeList to all of the actual nodes children
+        //...if so, increase the depthCount, make the deepestElement the first child and set the deepesNodeList to all of the actual nodes children
         
-        depthCount += 1;
+       
         console.log('Tiefe: ' + depthCount);
-        deepestElement = deepestNodeList[i].children[0];
-        deepestNodeList = deepestNodeList[i].children;
+        deepestElement = deepestNodeList[0].children[0];
+        deepestNodeList = deepestNodeList[0].children;
+        depthCount += 1;
         findDeepest(deepestNodeList);
         
       } else {
         
         return deepestElement;
       }
-      
-    }
-        
-    console.log(deepestElement);
-    return deepestElement;
-    
-  }
+  
   
   findDeepest(deepestNodeList);
   
