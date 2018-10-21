@@ -59,8 +59,8 @@ function deepestChild() {
       deepestElement = currentNode;
       return deepestElement;
     }
+    
   }
-  
   
   findDeepest(currentNode);
   
