@@ -49,7 +49,7 @@ function deepestChild() {
       currentNode = currentNode.children[0];
       depthCount += 1;
       console.log(`Tiefe: ${depthCount}`);
-      console.log('If... currentNode: ' + currentNode);
+      console.log(`If... currentNode: ${currentNode}`);
       findDeepest(currentNode);
       
     } 
