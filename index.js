@@ -44,8 +44,7 @@ function deepestChild() {
       
     //...see if the actual node has children
     if (currentNode.childElementCount > 0) {
-      
-      //...if so, look into the first child node
+    
       currentNode = currentNode.children[0];
       depthCount += 1;
       console.log(`Tiefe: ${depthCount}`);
