@@ -42,13 +42,16 @@ function deepestChild() {
   
   function findDeepest(deepestNodeList) {
     
+    //Go through the currently deepestNodeList and...
     for( let i = 0; i < deepestNodeList.length; i += 1) {
       
+      //...see if the actual node has children
       if (deepestNodeList[i].childElementCount > 0) {
         
+        //...if so, increase the depth, make the deepestElement the first child
         depthCount += 1;
         console.log('Tiefe: ' + depthCount);
-        deepestElement = deepestNodeList[i];
+        deepestElement = deepestNodeList[i].children[0];
         deepestNodeList = deepestNodeList[i].children;
         findDeepest(deepestNodeList);
         
