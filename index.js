@@ -58,9 +58,10 @@ function deepestChild() {
     //if not, look into the next child node
     else   {
      
-      console.log('Else - deepestElement. ' + deepestElement);
-      console.log(deepestElement);
-      return deepestElement;
+      console.log('Else - deepestElement. ' + currentNode);
+      console.log(currentNode);
+      return currentNode;
+      
     }
     
   }
