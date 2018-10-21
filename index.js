@@ -45,7 +45,7 @@ function deepestChild() {
       //...see if the actual node has children
       if (deepestNodeList[0].childElementCount > 0) {
         
-        //...if so, increase the depthCount, make the deepestElement the first child and set the deepesNodeList to all of the actual nodes children
+        //...if so, look into the first child node
         
        
         console.log('Tiefe: ' + depthCount);
@@ -54,10 +54,13 @@ function deepestChild() {
         
         findDeepest(deepestNodeList);
         
-      } else {
+      } 
+      
+      //if not, look into the next child node
+      else   {
         depthCount += 1;
         
-        return deepestElement;
+        //return deepestElement;
       }
   
   
