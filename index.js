@@ -25,6 +25,6 @@ function increaseRankBy(n) {
     console.log(nodes);
     let num = parseInt(nodes[i].innerHTML);
 	  console.log(num);
-    nodes[i].innerText = (num + n);
+    nodes[i].innerHTML = (num + n);
   }
 }
