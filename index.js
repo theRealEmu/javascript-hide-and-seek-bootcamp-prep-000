@@ -18,5 +18,10 @@ function nestedTarget() {
 
 //3) Define a function increaseRankBy(n) that increases the ranks in all of the .ranked-lists by n. (You might need to make use of parseInt()
 function increaseRankBy(n) {
-  let nodes = document.querySelector('.ranked-lists')
+  
+  let nodes = document.querySelector('.ranked-list').children('li');
+  
+  for ( let i = 0; i < nodes.length; i += 1) {
+    
+  }
 }
